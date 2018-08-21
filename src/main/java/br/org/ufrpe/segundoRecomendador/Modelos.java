@@ -8,13 +8,13 @@ import java.io.IOException;
 
 public class Modelos {
     public DataModel getDadosMenores() throws IOException {
-        return model("dados.csv");
+        return model("/src/main/resources/dados.csv");
     }
     public DataModel getDadosMaiores() throws IOException{
-        return  model("dadosMaiores.csv");
+        return  model("/src/main/resources/dadosMaiores.csv");
     }
     public DataModel getDadosComPergunta() throws IOException{
-        return model("dadosComPergunta.csv");
+        return model("/src/main/resources/dadosComPergunta.csv");
     }
     private DataModel model(String path) throws IOException {
         File file = new File(path);
