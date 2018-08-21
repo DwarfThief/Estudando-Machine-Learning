@@ -1,4 +1,4 @@
-package br.org.ufrpe;
+package br.org.ufrpe.primeiroRecomendador;
 
 import org.apache.mahout.cf.taste.common.TasteException;
 import org.apache.mahout.cf.taste.impl.model.file.FileDataModel;
