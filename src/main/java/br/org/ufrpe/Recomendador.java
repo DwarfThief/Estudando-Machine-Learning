@@ -15,7 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-public class RecomendadorMain {
+public class Recomendador {
     public static void main(String args[]) throws IOException, TasteException {
         File file = new File("dados.csv");
         DataModel model = new FileDataModel(file);
@@ -26,7 +26,7 @@ public class RecomendadorMain {
         //Criando um recomendador
         UserBasedRecommender recommender = new GenericUserBasedRecommender(model, neighborhood, similarity);
 
-        List<RecommendedItem> recommendations = recommender.recommend(3,3);
+        List<RecommendedItem> recommendations = recommender.recommend(2,3);
         for(RecommendedItem recommendation : recommendations){
             System.out.println(recommendation);
         }
